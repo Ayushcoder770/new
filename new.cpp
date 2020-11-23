@@ -1,4 +1,5 @@
 //this is a code
+//this is a code to calculate table 
 #include<iostream>
 #include<math.h>
 using namespace std;

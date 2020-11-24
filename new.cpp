@@ -1,7 +1,6 @@
 //this is a code
 //this is a code to calculate table 
 #include<iostream>
-#include<math.h>
 using namespace std;
 int main()
 {
@@ -26,8 +25,7 @@ switch(a)
                 cin>>b;
                
                cout<<"fibonacci series"<<endl;
-
-               for(i=1;i<=n;i++)
+                   for(i=1;i<=n;i++)
                   {
                      if (i==1)
                    {

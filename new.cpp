@@ -12,7 +12,7 @@ cout<<"enter your choice"<<endl;
 cin>>a;
 switch(a)
       {
-         case1 :cout<<"enter a num:";
+         case 1 :cout<<"enter a num:";
                  cin>>n;  
                  for(i=1;i<=10;i++)
                  {
@@ -20,30 +20,36 @@ switch(a)
                  }
                  break;
          
-         case2: int b,t1=0,t2=1,nt=0;
+         case 2: { int b, q=0 , p=1 , nt=0 ;
                 cout <<"enter the number of terms:"<<endl;
                 cin>>b;
                
                cout<<"fibonacci series"<<endl;
-                   for(i=1;i<=n;i++)
+                   for(i=1;i<=b;i++)
                   {
                      if (i==1)
-                   {
-                      cout<<" "<<t1;
+                    {
+                      cout<<" "<<q;
                       continue;
-                   }
+                    }
                       if(i==2) 
-                  {
-                     cout<<" "<<t2;
+                    {
+                     cout<<" "<<p;
                      continue;
-                  }
-                  nt=t1+t2;
-                  t1=t2;
-                  t2=nt;
+                    }  
+                  nt=q+p;
+                  q=p;
+                  p=nt;
 
                   cout<<nt<<" ";
                   }
                   break;
+                 }
+               
+               
+
+      default:cout<<"invaild choice";
+                   break;
       }
 
 return(0);
